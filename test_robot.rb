@@ -106,4 +106,44 @@ class TestRobot < Test::Unit::TestCase
     assert_equal(robot.move, false)
     # puts robot.position
   end
+
+  def test_west_edge2
+    robot = Robot.new(10, 10)
+    robot.place(5, 5, "west")
+
+    robot.board.print_board
+
+    assert_equal(robot.move, true)
+    # puts robot.position
+    assert_equal(robot.move, true)
+    # puts robot.position
+    assert_equal(robot.move, true)
+    # puts robot.position
+    assert_equal(robot.move, true)
+    # puts robot.position
+    assert_equal(robot.move, false)
+    # puts robot.position
+  end
+
+  def test_west_edge3
+    robot = Robot.new(10, 10)
+    robot.place(7, 5, "west")
+
+    robot.board.print_board
+
+    assert_equal(robot.move, true)
+    # puts robot.position
+    assert_equal(robot.move, true)
+    # puts robot.position
+    assert_equal(robot.move, true)
+    # puts robot.position
+    assert_equal(robot.move, true)
+    # puts robot.position
+    assert_equal(robot.move, true)
+    # puts robot.position
+    assert_equal(robot.move, true)
+    # puts robot.position
+    assert_equal(robot.move, false)
+    # puts robot.position
+  end
 end
