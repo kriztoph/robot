@@ -28,11 +28,11 @@ class TestRobot < Test::Unit::TestCase
     robot = Robot.new(5, 5)
     robot.place(3, 3, "east")
     assert_equal(robot.position[:cardinal], "east")
-    robot.cardinal_right
+    robot.cardinal_turn("right")
     assert_equal(robot.position[:cardinal], "south")
-    robot.cardinal_right
+    robot.cardinal_turn("right")
     assert_equal(robot.position[:cardinal], "west")
-    robot.cardinal_right
+    robot.cardinal_turn("right")
     assert_equal(robot.position[:cardinal], "north")
   end
 
@@ -40,14 +40,12 @@ class TestRobot < Test::Unit::TestCase
     robot = Robot.new(5, 5)
     robot.place(3, 3, "south")
     assert_equal(robot.position[:cardinal], "south")
-    robot.cardinal_left
+    robot.cardinal_turn("left")
     assert_equal(robot.position[:cardinal], "east")
-    robot.cardinal_left
+    robot.cardinal_turn("left")
     assert_equal(robot.position[:cardinal], "north")
-    robot.cardinal_right
-    assert_equal(robot.position[:cardinal], "east")
-    robot.cardinal_right
-    assert_equal(robot.position[:cardinal], "south")
+    robot.cardinal_turn("left")
+    assert_equal(robot.position[:cardinal], "west")
   end
 
   def test_south_edge

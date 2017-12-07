@@ -1,3 +1,18 @@
+CARDINAL_DIRECTIONS = {
+  right: {
+    west: "north",
+    north: "east",
+    east: "south",
+    south: "west"
+  },
+  left: {
+    west: "south",
+    north: "west",
+    east: "north",
+    south: "east"
+  }
+}
+
 class Robot
   attr_accessor :board
   attr_accessor :position
@@ -92,38 +107,13 @@ class Robot
     return false
   end
 
-  def cardinal_left
-    new_cardinal = nil
-
-    case @position[:cardinal]
-    when "west"
-      new_cardinal = "south"
-    when "east"
-      new_cardinal = "north"
-    when "north"
-      new_cardinal = "west"
-    when "south"
-      new_cardinal = "east"
+  def cardinal_turn(direction)
+    case direction
+    when "right"
+      self.place(@position[:x], @position[:y], CARDINAL_DIRECTIONS[:right][@position[:cardinal].to_sym])
+    when "left"
+      self.place(@position[:x], @position[:y], CARDINAL_DIRECTIONS[:left][@position[:cardinal].to_sym])
     end
-
-    self.place(@position[:x], @position[:y], new_cardinal)
-  end
-
-  def cardinal_right
-    new_cardinal = nil
-
-    case @position[:cardinal]
-    when "west"
-      new_cardinal = "north"
-    when "east"
-      new_cardinal = "south"
-    when "north"
-      new_cardinal = "east"
-    when "south"
-      new_cardinal = "west"
-    end
-
-    self.place(@position[:x], @position[:y], new_cardinal)
   end
 
   def report

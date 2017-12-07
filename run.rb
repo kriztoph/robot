@@ -33,50 +33,20 @@ robot.place(6, 6, "west")
 robot.board.print_board()
 
 
-puts "robot.cardinal_right()"
-robot.cardinal_right()
+puts "robot.cardinal_turn(right)"
+robot.cardinal_turn("right")
 puts robot.position
 robot.board.print_board()
 puts ""
 
-puts "robot.cardinal_right()"
-robot.cardinal_right()
+puts "robot.cardinal_turn(right)"
+robot.cardinal_turn("right")
 puts robot.position
 robot.board.print_board()
 puts ""
 
-puts "robot.cardinal_right()"
-robot.cardinal_right()
-puts robot.position
-robot.board.print_board()
-puts ""
-
-puts "robot.move()"
-robot.move()
-puts robot.position
-robot.board.print_board()
-puts ""
-
-puts "robot.move()"
-robot.move()
-puts robot.position
-robot.board.print_board()
-puts ""
-
-puts "robot.move()"
-robot.move()
-puts robot.position
-robot.board.print_board()
-puts ""
-
-puts "robot.cardinal_right()"
-robot.cardinal_right()
-puts robot.position
-robot.board.print_board()
-puts ""
-
-puts "robot.cardinal_right()"
-robot.cardinal_right()
+puts "robot.cardinal_turn(right)"
+robot.cardinal_turn("right")
 puts robot.position
 robot.board.print_board()
 puts ""
@@ -99,44 +69,14 @@ puts robot.position
 robot.board.print_board()
 puts ""
 
-puts "robot.move()"
-robot.move()
+puts "robot.cardinal_turn(right)"
+robot.cardinal_turn("right")
 puts robot.position
 robot.board.print_board()
 puts ""
 
-puts "robot.move()"
-robot.move()
-puts robot.position
-robot.board.print_board()
-puts ""
-
-puts "robot.cardinal_left()"
-robot.cardinal_left()
-puts robot.position
-robot.board.print_board()
-puts ""
-
-puts "robot.move()"
-robot.move()
-puts robot.position
-robot.board.print_board()
-puts ""
-
-puts "robot.move()"
-robot.move()
-puts robot.position
-robot.board.print_board()
-puts ""
-
-puts "robot.cardinal_right()"
-robot.cardinal_right()
-puts robot.position
-robot.board.print_board()
-puts ""
-
-puts "robot.cardinal_right()"
-robot.cardinal_right()
+puts "robot.cardinal_turn(right)"
+robot.cardinal_turn("right")
 puts robot.position
 robot.board.print_board()
 puts ""
@@ -171,14 +111,32 @@ puts robot.position
 robot.board.print_board()
 puts ""
 
-puts "robot.cardinal_right()"
-robot.cardinal_right()
+puts "robot.cardinal_turn(left)"
+robot.cardinal_turn("left")
 puts robot.position
 robot.board.print_board()
 puts ""
 
-puts "robot.cardinal_right()"
-robot.cardinal_right()
+puts "robot.move()"
+robot.move()
+puts robot.position
+robot.board.print_board()
+puts ""
+
+puts "robot.move()"
+robot.move()
+puts robot.position
+robot.board.print_board()
+puts ""
+
+puts "robot.cardinal_turn(right)"
+robot.cardinal_turn("right")
+puts robot.position
+robot.board.print_board()
+puts ""
+
+puts "robot.cardinal_turn(right)"
+robot.cardinal_turn("right")
 puts robot.position
 robot.board.print_board()
 puts ""
@@ -213,14 +171,14 @@ puts robot.position
 robot.board.print_board()
 puts ""
 
-puts "robot.cardinal_right()"
-robot.cardinal_right()
+puts "robot.cardinal_turn(right)"
+robot.cardinal_turn("right")
 puts robot.position
 robot.board.print_board()
 puts ""
 
-puts "robot.cardinal_right()"
-robot.cardinal_right()
+puts "robot.cardinal_turn(right)"
+robot.cardinal_turn("right")
 puts robot.position
 robot.board.print_board()
 puts ""
@@ -231,8 +189,50 @@ puts robot.position
 robot.board.print_board()
 puts ""
 
-puts "robot.cardinal_right()"
-robot.cardinal_right()
+puts "robot.move()"
+robot.move()
+puts robot.position
+robot.board.print_board()
+puts ""
+
+puts "robot.move()"
+robot.move()
+puts robot.position
+robot.board.print_board()
+puts ""
+
+puts "robot.move()"
+robot.move()
+puts robot.position
+robot.board.print_board()
+puts ""
+
+puts "robot.move()"
+robot.move()
+puts robot.position
+robot.board.print_board()
+puts ""
+
+puts "robot.cardinal_turn(right)"
+robot.cardinal_turn("right")
+puts robot.position
+robot.board.print_board()
+puts ""
+
+puts "robot.cardinal_turn(right)"
+robot.cardinal_turn("right")
+puts robot.position
+robot.board.print_board()
+puts ""
+
+puts "robot.move()"
+robot.move()
+puts robot.position
+robot.board.print_board()
+puts ""
+
+puts "robot.cardinal_turn(right)"
+robot.cardinal_turn("right")
 puts robot.position
 robot.board.print_board()
 puts ""
